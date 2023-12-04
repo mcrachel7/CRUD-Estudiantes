@@ -1,0 +1,28 @@
+<div class="container">      
+    <div class="row">
+    <br>
+    <a href="alumnos/add" class="btn btn-primary">Nuevo Alumno</a>
+      <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>Numero De Cuenta</th>
+            <th>Nombre</th>
+            <th>Carrera</th>
+            <th>Seccion</th>
+            <th colspan="2">Operación</th>
+        </tr>
+        </thead>
+        {{#each alumnos}}
+          <tr>
+            <td>{{this.numDeCuenta}}</td> 
+            <td>{{this.nombre}}</td>
+            <td>{{this.carrera}}</td>
+            <td>{{this.seccion}}</td>
+                       
+            <td><a href="/alumnos/update/{{this._id}}">Actualizar</a></td> 
+            <td><a href="/alumnos/delete/{{this._id}}">Eliminar</a></td> 
+          </tr>          
+       {{/each}}   
+      </table>
+    </div>
+</div>

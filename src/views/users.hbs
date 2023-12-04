@@ -1,0 +1,19 @@
+<div class="container">
+    <br />
+    <!-- Importante indicar el path donde se encuentra el metodo POST -->
+    <form action="/users/alumnos/operate" method="POST">
+        <input type="hidden" name="_id" value="{{alumno._id}}"/>
+        <div class="form-group">
+            <label for="Nombre">Numero de Cuenta:</label>
+            <input type="nombre" class="form-control" id="nombre" name="nombre" value="{{alumno.numDeCuenta}}">
+            <label for="Nombre">Nombre:</label>
+            <input type="nombre" class="form-control" id="nombre" name="nombre" value="{{alumno.nombre}}">
+            <label for="Nombre">Carrera:</label>
+            <input type="nombre" class="form-control" id="nombre" name="nombre" value="{{alumno.carrera}}">
+             <label for="Nombre">Sección:</label>
+            <input type="nombre" class="form-control" id="nombre" name="nombre" value="{{alumno.seccion}}">
+        </div>        
+        <button type="submit" class="btn btn-primary">Agregar</button>
+        <a href="/" class="btn btn-danger">Cancelar</a>
+    </form>
+</div>
